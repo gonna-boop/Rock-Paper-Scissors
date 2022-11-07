@@ -6,13 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<script src="scripts.js"></script>
+<!-- <script src="scripts.js"></script> -->
 
 <body>
-    <div id="playerChoice">
-        <button onClick="play()">Play Rock Paper Scissors</button>
-        <div id="result"></div>
+    <div class="page">
+        <div class="game-container">
+            <div class="header">
+                <div class="header-logo"><img src="pics/TOP.png"></div>
+                <div class="header-links">
+                <a href="https://github.com/gonna-boop" 
+                    style="text-decoration: none">My GitHub</a>
+                </div>
+            </div>
+            <div class="content">
+                    <div class="title">Rock, Paper, Scissors Project</div>
+                <div class="rules">Rock beats scissors | Scissors beats paper | Paper beats rock</div>
+                <div class="game-card">
+                        <div class="rules-2">First to 5 wins!<br></br></div>
+                    <div class="choices">
+                        <button id="rock">Rock</button>
+                        <button id="paper">Paper</button>
+                        <button id="scissors">Scissors</button>  
+                    </div>
+                    <div id="round-result">
+                        <p id="matchResult"></p>
+                        <p id="playerScore">Player Score: 0 </p>
+                        <p id="compScore">Computer Score: 0</p>
+                    </div>
+                    <div id="game-result">
+                        <div id="result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+<script src="scripts.js"></script>
 </html>
